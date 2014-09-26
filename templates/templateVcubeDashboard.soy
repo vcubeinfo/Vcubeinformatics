@@ -1,0 +1,46 @@
+{namespace templateDashboard}
+
+/** This is about what we do template
+*/
+{template .renderHome}
+	<div class="homeServices">UI / UX</div>
+	<div class="homeServices">Apps</div>
+	<div class="homeServices">E-Pubs</div>
+{/template}
+
+/** This is about what we do template
+* @param contentItem
+*/
+{template .renderWhatWeDo}
+	<li>{$contentItem}</li>
+{/template}
+
+/** This is about contact us
+*/
+{template .renderContactUs}
+	<div class="cotactContainer">
+		<div class="leftContact">
+			<h3> Address </h3>
+			Flat No # 101, 
+			Sri Surya Rama Residency,
+			Plot No: 13,
+			Hyderabad,
+			Andhra Pradesh	500 081	India.
+			
+			Landline: 040 60605959.
+			
+		</div>
+		<div id="map_canvas"></div>
+	</div>
+{/template}
+
+/** This is about contact us
+* @param header
+* @param content
+*/
+{template .renderAboutUs}
+	<div class="AboutItem">
+		<h3>{$header}</h3>
+		<div class="aboutContent">{$content}</div>
+	</div>
+{/template}
